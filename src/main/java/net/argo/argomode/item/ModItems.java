@@ -1,6 +1,7 @@
 package net.argo.argomode.item;
 
 import net.argo.argomod.ArgoMod;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -17,6 +18,9 @@ public class ModItems {
             ITEMS.register("ruby", ()-> new Item(new Item.Properties().tab(CreativeTab.ARGOMOD_TAB)));
     public static final RegistryObject<Item> RAW_RUBY =
             ITEMS.register("raw_ruby", ()-> new Item(new Item.Properties().tab(CreativeTab.ARGOMOD_TAB)));
+    public static final RegistryObject<Item> MANDARIN =
+            ITEMS.register("mandarin", ()-> new Item(new Item.Properties().tab(CreativeTab.ARGOMOD_TAB)));
+
 
 
     public static void register(IEventBus eventBus){
